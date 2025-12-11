@@ -87,11 +87,15 @@ This setup demonstrates a simple optical communication system similar to Li-Fi.
 ---
 
 ## **Default Morse Timing**
-const unsigned long dotMax = 250;       // <= dotTime + small margin
-const unsigned long dashMin = 251;      // >= dotTime + small margin
-const unsigned long dashMax = 650;      // slightly above dashTime
-const unsigned long letterGap = 650;    // match transmitter letter gap
-const unsigned long wordGap = 1450;     // match transmitter word gap
+
+| Morse Element | Duration (ms) |
+|---------------|---------------|
+| Dot           | <= 250        |
+| Dash Min      | >= 251        |
+| Dash Max      | <= 650        |
+| Letter Gap    | 650           |
+| Word Gap      | 1450          |
+
 
 
 ---
